@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/setting_wireless_switch">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/tab_top_bg" >
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_wireless_switch"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/wireless_switch_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bottom_cancer" />
+<!--             android:text="取消" /> -->
+
+        <Button
+            android:id="@+id/wireless_switch_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bottom_ok" />
+<!--             android:text="确定" /> -->
+    </RelativeLayout>
+    
+  <RelativeLayout
+      android:id="@+id/relativeLayout2"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/relativeLayout1"
+      android:background="@drawable/tab_content_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relay_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         
+         
+<!--         android:layout_below="@id/relativeLayout2" > -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/wireless_switch_img_top_left" -->
+<!--             android:layout_width="50dp" -->
+<!--             android:layout_height="50dp" -->
+<!--             android:layout_marginLeft="5dp" -->
+<!--             android:layout_marginTop="5dp" -->
+<!--             android:scaleType="fitXY" -->
+            
+<!--             android:onClick="onClick" /> -->
+<!-- android:src="@drawable/switch4_top1"  -->
+<!--         <ImageView -->
+<!--             android:id="@+id/wireless_switch_img_top_right" -->
+<!--             android:layout_width="50dp" -->
+<!--             android:layout_height="50dp" -->
+<!--             android:layout_marginTop="5dp" -->
+<!--             android:layout_toRightOf="@id/wireless_switch_img_top_left" -->
+<!--             android:scaleType="fitXY" -->
+            
+<!--             android:onClick="onClick" /> -->
+<!-- android:src="@drawable/switch4_top2" -->
+<!--         <ImageView -->
+<!--             android:id="@+id/wireless_switch_img_bottom_left" -->
+<!--             android:layout_width="50dp" -->
+<!--             android:layout_height="50dp" -->
+<!--             android:layout_below="@id/wireless_switch_img_top_left" -->
+<!--             android:layout_marginLeft="5dp" -->
+<!--             android:scaleType="fitXY" -->
+            
+<!--             android:onClick="onClick" /> -->
+<!--         android:src="@drawable/switch4_bottom1" -->
+<!--         <ImageView -->
+<!--             android:id="@+id/wireless_switch_img_bottom_right" -->
+<!--             android:layout_width="50dp" -->
+<!--             android:layout_height="50dp" -->
+<!--             android:layout_alignLeft="@+id/wireless_switch_img_top_right" -->
+<!--             android:layout_alignTop="@+id/wireless_switch_img_bottom_left" -->
+<!--             android:scaleType="fitXY" -->
+            
+<!--             android:onClick="onClick" /> -->
+<!-- android:src="@drawable/switch4_bottom2" -->
+
+
+
+        <TextView
+            android:id="@+id/wireless_switch_textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:text="床头开关"
+            android:textSize="22dp" />
+        
+         
+
+        <TextView
+            android:id="@+id/wireless_switch_textview_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/wireless_switch_textview_name"
+            android:layout_margin="5dp"
+            android:singleLine="true"
+            android:text="ID:%1$s"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/wireless_switch_textview_drive"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/wireless_switch_textview_id"
+            android:background="@drawable/listdivider" />
+
+        <TextView
+            android:id="@+id/wireless_switch_textview_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/wireless_switch_textview_drive"
+            android:singleLine="true"
+            android:text="左上"
+            android:textSize="22dp" />
+
+       
+
+        
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relay_switch"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView_change_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="对象："
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/wireless_spinner_change_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/textView_change_light" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relay_1"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView_change_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="控制方式："
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/wireless_spinner_change_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/textView_change_control" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relay_2"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView_change_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="触发场景："
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/wireless_spinner_change_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/textView_change_scene" />
+    </RelativeLayout>
+    
+<!--     <LinearLayout  -->
+<!--         android:id="@+id/setting_wireless_switch1" -->
+<!--         android:orientation="vertical"></LinearLayout> -->
+
+	<RelativeLayout 
+	     android:id="@+id/relay_6"
+	    android:layout_marginTop="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"   
+	    android:layout_below="@+id/relay_2"
+	    android:gravity="center_horizontal">
+
+	 <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"      
+              
+            android:singleLine="true"
+            android:text="点击要设置的键进行切换"
+            android:textSize="16dp" />
+	 </RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/relay_5"
+	    android:layout_marginTop="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	   	android:layout_alignParentBottom="true"
+	   
+	    android:layout_below="@+id/relay_6"
+	    android:gravity="center_horizontal"
+	    >
+
+
+	  
+
+	</RelativeLayout>
+	
+
+
+    
+    </RelativeLayout>
+     
+     
+
+</LinearLayout>

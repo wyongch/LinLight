@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" >
+
+    <TextView
+        android:id="@+id/app_respons_textview_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="来短信"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/app_respons_textview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:text="未开启"
+        android:textSize="12dp" />
+
+    <Switch
+        android:id="@+id/app_respons_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:focusable="false"
+        android:textOff="关"
+        android:textOn="开" />
+
+    <TextView
+        android:id="@+id/app_respons_textview_lights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/app_respons_textview_sms"
+        android:layout_below="@id/app_respons_textview_sms"
+        android:text="All"
+        android:textSize="12dp" />
+    
+     <TextView
+        android:id="@+id/app_respons_textview_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="闪烁"
+        />
+
+</RelativeLayout>

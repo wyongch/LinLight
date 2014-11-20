@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp" 
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/wireless_switch_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/switch1" />
+
+    <TextView
+        android:id="@+id/wireless_switch_textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/wireless_switch_img"
+        android:layout_marginRight="5dp"
+        android:singleLine="true"
+        android:text="name"
+        android:textSize="24dp" />
+    
+    
+
+    <TextView
+        android:id="@+id/wireless_switch_textview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/wireless_switch_img"
+        android:layout_alignParentRight="true"
+        android:singleLine="true"
+        android:layout_margin="5dp"
+        android:text="ID:%1$s"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/wireless_switch_textview_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wireless_switch_textview_id"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/wireless_switch_img"
+        android:singleLine="true"
+        android:text="name"
+        android:textSize="24dp" />
+
+</RelativeLayout>

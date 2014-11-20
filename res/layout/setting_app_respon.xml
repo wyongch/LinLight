@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/tab_top_bg" >
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_app_respon"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/app_respon_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bottom_cancer" />
+<!--             android:text="取消" /> -->
+
+        <Button
+            android:id="@+id/app_respon_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bottom_ok" />
+<!--             android:text="确定" /> -->
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1" 
+        android:background="@drawable/tab_content_bg">
+
+    <RelativeLayout
+        android:id="@+id/relay_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="20dp" >
+
+<!--         android:layout_below="@id/relativeLayout1" -->
+        
+        <TextView
+            android:id="@+id/textView_change_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="应用类型："
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/app_respon_spinner_change_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/textView_change_light" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relay_1"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView_change_obj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="对象："
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/app_respon_spinner_change_obj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/textView_change_obj" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relay_2"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView_app_respon_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="动作："
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/app_respon_spinner_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/textView_app_respon_light" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relay_3"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView_change_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="触发场景："
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/app_respon_spinner_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/textView_change_scene" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+    
+</RelativeLayout>

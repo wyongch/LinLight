@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    
+    >
+<!--     android:background="@drawable/setting_wireless_bg" -->
+<!--   增加背景属性  android:background="@drawable/setting_wireless_bg" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/tab_top_bg"
+        >
+<!--    修改标题背景属性     android:background="@color/bg_tab" > -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_wireless_switch"
+            android:textColor="@color/white"
+            android:textSize="@dimen/table_title_text_size" />
+
+        <Button
+            android:id="@+id/wireless_switch_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bottom_cancer" />
+<!--    注消text属性   增加background属性        android:text="@string/cancel" /> -->
+
+        <Button
+            android:id="@+id/wireless_switch_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bottom_ok" />
+<!--     注消text属性   增加background属性        android:text="@string/confirm" /> -->
+    </RelativeLayout>
+
+<!--     修改height属性 android:layout_height="wrap_content"  增加gravity属性-->
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/tab_content_bg"
+	    >
+
+    <TextView
+        android:id="@+id/setting_wireless_textview"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center"
+        
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/setting_switch_prompt"
+        android:textColor="@color/white" />
+
+    <!-- 定义TabHost组件 -->
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/setting_wireless_textview"
+        >
+		
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="49dp"
+            android:orientation="vertical" 
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/tabhost_bg">
+
+            <!-- TabWidget的id属性必须为 @android:id/tabs -->
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" 
+                android:tabStripEnabled="false"/>
+            <!-- FrameLayout的id属性必须为 @android:id/tabcontent -->
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/view2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/view3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <ImageView
+        android:id="@+id/tab_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabhost"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/switch1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+    
+    </RelativeLayout>
+
+</LinearLayout>

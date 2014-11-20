@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinner_change_effect">
+        <item>渐变</item>
+        <item>闪烁 </item>
+        <item>闪烁间隔</item>
+        <item>连续闪烁</item>
+    </string-array>
+    <string-array name="spinner_change_scene">
+        <item>卧室</item>
+        <item>客厅 </item>
+        <item>小饭厅</item>
+        <item>书房</item>
+    </string-array>
+    <string-array name="spinner_change_light">
+        <item>卧室小夜灯</item>
+        <item>书房书柜灯</item>
+        <item>卧室床前灯</item>
+        <item>小饭厅灯</item>
+    </string-array>
+    <string-array name="spinner_change_app">
+        <item>来电话</item>
+        <item>来短信</item>
+    </string-array>
+    <string-array name="gallery_text">
+        <item>测试场景1</item>
+        <item>测试场景2</item>
+        <item>测试场景3</item>
+        <item>测试场景4</item>
+        <item>测试场景5</item>
+        <item>测试场景6</item>
+        <item>测试场景7</item>
+    </string-array>
+    <string-array name="spinner_change_repeat">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期天</item>
+    </string-array>
+    
+     <string-array name="spinner_change_control">
+        <item>开</item>
+        <item>关</item>
+        <item>闪烁</item>
+        <item>场景切换</item>
+    </string-array>
+    
+      <string-array name="spinner_change_obj">
+        <item>所有</item>
+        <item>部分</item>
+        <item>单个</item>
+    </string-array>
+
+</resources>

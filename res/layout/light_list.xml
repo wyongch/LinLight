@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relay_light_list"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/tab_top_bg" >
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/main_page_light_list"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/light_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bottom_back" />
+<!--             android:text="@string/back" -->
+<!--             android:textColor="@color/white" /> -->
+
+        <Button
+            android:id="@+id/scan_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/scane_bg" ></Button>
+<!--             android:text="@string/scan_button" -->
+<!--             android:textColor="@color/white" /> -->
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tab_content_bg"
+        android:layout_below="@id/relay_light_list">
+    
+    <ListView 
+        android:id="@+id/light_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        ></ListView>
+    
+    </RelativeLayout>
+
+</RelativeLayout>

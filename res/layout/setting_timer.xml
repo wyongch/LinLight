@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/tab_top_bg" >
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_timer"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        
+          <Button
+            android:id="@+id/timer_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bottom_cancer" />
+<!--             android:text="取消" /> -->
+
+        <Button
+            android:id="@+id/timer_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bottom_ok" />
+<!--             android:text="确定" /> -->
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tab_content_bg"
+        android:layout_below="@+id/relativeLayout1" >
+    
+<!--     android:layout_below="@+id/relativeLayout2" -->
+
+	<TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    
+     <RelativeLayout
+        android:id="@+id/relay_repetition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker1"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView_change_repetition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="重复："
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+        
+        <TextView
+            android:id="@+id/textView_change_repeat_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="点击选择"
+            android:layout_toRightOf="@id/textView_change_repetition" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relay_repetition"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView_change_object"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="对象："
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/spinner_change_object"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/textView_change_object" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relay_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relay_object"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView_change_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="动作："
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/spinner_change_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/textView_change_action" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/timer_relay_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relay_action"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView_change_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="触发场景："
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/timer_spinner_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/textView_change_scene" />
+    </RelativeLayout>
+
+    
+
+    </RelativeLayout>
+    
+</RelativeLayout>
